@@ -8,7 +8,7 @@ function App() {
   const [showCopy, setShowCopy] = useState(false);
 
   const validaEntrada = () => {
-    valorFaixa > qtdNumeros
+    Number(valorFaixa) > Number(qtdNumeros)
       ? sortear()
       : alert(
           "A faixa de números deve ser maior que a quantidade de números escolhidos!"
@@ -96,8 +96,7 @@ function App() {
         </button>
       )}
       <a className="mt-4" href="https://github.com/okida-rafael" target="_blank"><img className="w-10" src='/github.png' alt="Rafael Okida" /></a>
-      <p>valorFaixa: {valorFaixa} - qtdNumeros: {qtdNumeros}</p>
-    </div>
+      </div>
   );
 }
 
